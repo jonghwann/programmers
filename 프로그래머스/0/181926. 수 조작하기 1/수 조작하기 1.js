@@ -1,14 +1,14 @@
 function solution(n, control) {
     let result = n;
     
-    for (let i = 0; i <= control.length; i++) {
-        if (control[i] === "w") {
+    for (let i of control) {
+        if (i === "w") {
             result += 1
-        } else if (control[i] === "s") {
+        } else if (i === "s") {
             result -= 1
-        } else if (control[i] === 'd') {
+        } else if (i === 'd') {
             result += 10 
-        } else if (control[i] === 'a') {
+        } else if (i === 'a') {
             result -= 10
         }
     }
