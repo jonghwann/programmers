@@ -1,3 +1,3 @@
 function solution(strlist) {
-    return strlist.map( str => str.length )
+    return strlist.map(el => el.length)
 }
