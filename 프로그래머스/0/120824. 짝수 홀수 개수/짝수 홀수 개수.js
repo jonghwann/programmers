@@ -1,3 +1,9 @@
 function solution(num_list) {
-    return [num_list.filter(el => el % 2 === 0).length, num_list.filter(el => el % 2 !== 0).length] 
+    let result = [0,0];
+    
+    for(let i of num_list) {
+        result[i % 2] += 1
+    }
+
+    return result;
 }
