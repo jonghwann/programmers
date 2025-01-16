@@ -1,3 +1,3 @@
 function solution(arr) {
-    return arr.map((el) => Array(el).fill(el)).flat();
+    return arr.flatMap((el) => Array(el).fill(el));
 }
