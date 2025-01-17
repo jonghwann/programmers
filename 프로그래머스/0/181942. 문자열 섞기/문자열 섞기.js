@@ -6,5 +6,5 @@ function solution(str1, str2) {
         str += str2[i];
     }
     
-    return str
+    return str;
 }
