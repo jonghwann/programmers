@@ -1,9 +1,9 @@
 function solution(a, b, c) {
-    let arr = [...new Set([a, b , c].filter((item, index) => [a, b, c].indexOf(item) === index))];
+    let size = new Set([a, b , c]).size
     
-    if (arr.length === 3) {
+    if (size === 3) {
         return a + b + c;
-    } else if (arr.length === 2) {
+    } else if (size === 2) {
         return (a + b + c) * (Math.pow(a, 2) + Math.pow(b, 2) + Math.pow(c, 2));
     } else {
         return (a + b + c) * (Math.pow(a, 2) + Math.pow(a, 2) + Math.pow(b, 2)) * (Math.pow(c, 3) + Math.pow(b, 3) + Math.pow(c, 3));
