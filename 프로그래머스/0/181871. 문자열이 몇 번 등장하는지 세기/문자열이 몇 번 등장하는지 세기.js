@@ -3,7 +3,7 @@ function solution(myString, pat) {
     
     for (let i = 0; i < myString.length; i++) {
         if (myString.substr(i, pat.length) === pat) {
-            result += 1;
+            result++;
         };
     }
     
