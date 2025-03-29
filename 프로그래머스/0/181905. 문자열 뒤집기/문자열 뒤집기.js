@@ -1,5 +1,5 @@
 function solution(my_string, s, e) {
-    let str = my_string.substring(s, e + 1);
-    
-    return my_string.replace(str, 'null').replace('null', str.split('').reverse().join(''));
+    const str = my_string.substring(s, e + 1);
+    const newStr = str.split('').reverse().join('');
+    return my_string.replace(str, newStr);
 }
