@@ -1,3 +1,3 @@
 function solution(spell, dic) {
-    return dic.filter(v => spell.every(c => v.includes(c))).length ? 1 : 2;
+    return dic.some(el => spell.sort().toString() == [...el].sort().toString()) ? 1 : 2;
 }
