@@ -1,3 +1,3 @@
 function solution(myStr) {
-    return /^[abc]+$/.test(myStr) ? ['EMPTY'] : myStr.split(/[abc]/).filter(Boolean);
+    return myStr.match(/[^a-c]+/g) ?? ['EMPTY']
 }
