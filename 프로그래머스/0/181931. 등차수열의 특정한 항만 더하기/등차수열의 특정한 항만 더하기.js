@@ -1,3 +1,10 @@
 function solution(a, d, included) {
-    return included.map((el, index) => ({a: el, b: a + (index * d)})).filter(el => el.a).reduce((a, b) => a + b.b, 0);
+    let result = 0;
+    
+    for(let i = 0; i < included.length; i++) {
+        if(included[i]) {
+            result += (a + (d * i));
+        }
+    }
+    return result;
 }
