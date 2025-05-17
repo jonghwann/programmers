@@ -1,11 +1,11 @@
 function solution(order) {
-    return order.map(el => {
-        if (el.includes('americano')) {
-            return 4500;
-        } else if (el.includes('cafelatte')) {
-            return 5000;
+    return order.reduce((acc, cur) => {
+        if (cur.includes('americano')) {
+            return acc + 4500;
+        } else if (cur.includes('cafelatte')) {
+            return acc + 5000;
         } else if ('anything') {
-            return 4500;
+            return acc + 4500;
         }
-    }).reduce((a, b) => a + b);
+    }, 0);
 }
