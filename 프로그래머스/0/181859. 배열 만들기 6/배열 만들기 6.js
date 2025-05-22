@@ -11,5 +11,5 @@ function solution(arr) {
         }
     }
     
-    return result.length > 0 ? result : [-1];
+    return result.length ? result : [-1];
 }
