@@ -1,13 +1,7 @@
 function solution(my_string, queries) {
-  const arr = my_string.split('');
-    
-    for (const [s, e] of queries) {
-        const sub = arr.slice(s, e + 1).reverse();
-        
-        for (let i = s; i <= e; i++) {
-            arr[i] = sub[i - s];
-        }
+    for (const query of queries) {
+        my_string = my_string.slice(0, query[0]) + my_string.slice(query[0], query[1] + 1).split("").reverse().join("") + my_string.slice(query[1] + 1);
     }
     
-    return arr.join('');
+    return my_string;
 }
