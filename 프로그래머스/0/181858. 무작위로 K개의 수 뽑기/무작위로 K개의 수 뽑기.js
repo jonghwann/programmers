@@ -1,18 +1,3 @@
 function solution(arr, k) {
-    const result = [];
-    const seen = new Set();
-    
-    for (const num of arr) {
-        if (!seen.has(num)) {
-            seen.add(num);
-            result.push(num);
-            if (result.length === k) break;
-        }
-    }
-    
-    while (result.length < k) {
-        result.push(-1);
-    }
-    
-    return result;
+    return [...Array.from(new Set(arr)), ...new Array(k).fill(-1)].slice(0, k);
 }
