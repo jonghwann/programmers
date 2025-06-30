@@ -4,12 +4,6 @@ const rl = readline.createInterface({
     output: process.stdout
 });
 
-const inputLines = [];
-
-rl.on('line', (line) => {
-    inputLines.push(line);
-});
-
 rl.on('close', () => {
     console.log(`!@#$%^&*(\\'"<>?:;`);
 });
