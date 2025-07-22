@@ -1,3 +1,3 @@
 function solution(numbers) {
-  return 45 - numbers.reduce((a, b) => a + b);
+  return 45 - numbers.reduce((acc, cur) => acc + cur);
 }
