@@ -5,5 +5,5 @@ function solution(price, money, count) {
         result += price * i;
     }
     
-    return money > result ? 0 : result - money;
+    return result > money ? result - money : 0;
 }
