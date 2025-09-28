@@ -1,3 +1,3 @@
 function solution(n) {
-    return n.toString().split("").map(el => Number(el)).reverse();
+    return n.toString().split('').reverse().map(el => el = parseInt(el));
 }
